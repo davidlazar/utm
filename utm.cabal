@@ -1,0 +1,30 @@
+Name:               utm
+Version:            0.1.0
+Synopsis:           Universal Turing Machine
+Homepage:           https://github.com/davidlazar/utm
+License:            MIT
+License-file:       LICENSE
+Author:             David Lazar
+Maintainer:         David Lazar <lazar6@illinois.edu>
+Category:           Language
+Build-type:         Simple
+Cabal-version:      >=1.6
+
+Extra-source-files:
+    README.md
+
+source-repository head
+  Type:             git
+  Location:         https://github.com/davidlazar/utm
+
+Library
+  ghc-options:      -Wall
+
+  Hs-source-dirs:   src
+
+  Exposed-modules:
+    Language.UTM.Syntax
+
+  Build-depends:
+    base >= 4 && < 5,
+    containers
